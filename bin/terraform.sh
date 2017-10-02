@@ -4,7 +4,8 @@ docker run \
   -it \
   --rm \
   -v `pwd`:/workdir \
-  -- workdir /workdir \
+  -v ~/keys/account.json:/account.json:ro \
+  --workdir /workdir \
   --user $UID:$UID \
   terraform_cli \
   "$@"
