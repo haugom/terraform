@@ -9,6 +9,7 @@ docker run \
   -v `pwd`:/workdir \
   -v ~/keys/account.json:/account.json:ro \
   -v ~/.ssh/id_rsa_terraform:/.ssh/id_rsa_terraform:ro \
+  -v ~/.ssh/haugom.pem:/.ssh/haugom.pem:ro \
   --workdir /workdir \
   --user $UID:$UID \
   terraform_cli \

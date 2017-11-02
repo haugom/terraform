@@ -13,5 +13,6 @@ Note:
 - My example I have a `~/keys/account.json` with credentials to google cloud
 - `~/.ssh/id_rsa_terraform`, an RSA private/public key without password
 - `~/keys/terraform-digitalocean.token` with a token to access my digital ocean resources.
+- `~/.ssh/haugom.pem`, a personal certificate to chef-server.
 
 These files are obviously not included in this project.
